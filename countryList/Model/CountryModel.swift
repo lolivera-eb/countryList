@@ -12,9 +12,11 @@ struct CountryModel {
     let name: String
     let borders: [String]
     let capital: String
+    let alpha3Code: String
     let flag: String
     let namelanguages: String
     let nativeNamelanguages: String
+    let region: String
 }
 
 

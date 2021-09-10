@@ -8,12 +8,13 @@
 import Foundation
 
 
-
 struct CountryData:Codable {
     let name: String
     let borders: [String]
     let capital: String
     let flag: String
+    let alpha3Code: String
+    let region: String
     let languages: [Language]
 }
 

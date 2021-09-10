@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" semanticContentAttribute="playback" reuseIdentifier="myCell" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-IL-0wX" customClass="CountryCellCustom" customModule="countryList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="670" height="92"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="670" height="92"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zna-Gt-tzS">
+                        <rect key="frame" x="0.0" y="0.0" width="670" height="92"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kwt-VC-DkU">
+                                <rect key="frame" x="0.0" y="21" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9Hr-kq-RVs"/>
+                                    <constraint firstAttribute="width" constant="50" id="oJw-ov-N9i"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="label Top" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2r-nD-NqF">
+                                <rect key="frame" x="58" y="16" width="612" height="33"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mylabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg1-SQ-NVR">
+                                <rect key="frame" x="58" y="57" width="612" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="systemGray2Color"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J2r-nD-NqF" firstAttribute="top" secondItem="zna-Gt-tzS" secondAttribute="top" constant="16" id="FCQ-EZ-VrQ"/>
+                            <constraint firstItem="J2r-nD-NqF" firstAttribute="leading" secondItem="kwt-VC-DkU" secondAttribute="trailing" constant="8" id="H2o-PN-gXV"/>
+                            <constraint firstItem="fg1-SQ-NVR" firstAttribute="leading" secondItem="J2r-nD-NqF" secondAttribute="leading" id="RtS-XL-ePc"/>
+                            <constraint firstAttribute="trailing" secondItem="J2r-nD-NqF" secondAttribute="trailing" id="TKg-07-vqe"/>
+                            <constraint firstAttribute="trailing" secondItem="fg1-SQ-NVR" secondAttribute="trailing" id="Vlt-70-ita"/>
+                            <constraint firstItem="kwt-VC-DkU" firstAttribute="leading" secondItem="zna-Gt-tzS" secondAttribute="leading" id="eCu-g4-ja9"/>
+                            <constraint firstItem="fg1-SQ-NVR" firstAttribute="top" secondItem="J2r-nD-NqF" secondAttribute="bottom" constant="8" id="gEp-cj-KLi"/>
+                            <constraint firstItem="kwt-VC-DkU" firstAttribute="centerY" secondItem="zna-Gt-tzS" secondAttribute="centerY" id="udy-u0-uFN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="zna-Gt-tzS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2Nh-Po-cFo"/>
+                <constraint firstItem="zna-Gt-tzS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6Gh-Kw-Lbg"/>
+                <constraint firstAttribute="trailing" secondItem="zna-Gt-tzS" secondAttribute="trailing" id="KKX-9l-QHe"/>
+                <constraint firstAttribute="bottom" secondItem="zna-Gt-tzS" secondAttribute="bottom" id="rpY-iY-JSE"/>
+            </constraints>
+            <size key="customSize" width="1203" height="92"/>
+            <connections>
+                <outlet property="myImagenCell" destination="kwt-VC-DkU" id="MUn-bq-XFc"/>
+                <outlet property="myLabelTop" destination="J2r-nD-NqF" id="H3L-AD-oiJ"/>
+                <outlet property="mylabel" destination="fg1-SQ-NVR" id="t2m-4D-SVm"/>
+            </connections>
+            <point key="canvasLocation" x="521.73913043478262" y="114.50892857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
